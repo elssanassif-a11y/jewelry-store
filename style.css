@@ -1,0 +1,1146 @@
+body {
+
+    
+    z-index: 0;
+    overflow-x: hidden;
+    margin: 0;
+    /*removes browser default space around the body*/
+
+    background-color: lightgrey;
+}
+
+#preloader {
+    background: url("Aurelle.png") no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100%;
+    z-index: 10;
+    transition: opacity 2s ease;/*Smoothly changes transparency over 2 seconds*/
+}
+
+
+#homeimg {
+
+
+    width: 95%;
+    height: auto; /* Automatically adjusts height to maintain proportions */
+    display: block;/* Makes the image a block element so it can be centered */
+    margin: auto;/* Centers the element horizontally */
+
+
+}
+
+#title {
+    position: absolute;
+
+    top: 40%;
+    left: 10%;
+    color: black;
+    font-size: 60px;
+    z-index: 3;
+    font-weight: 300;
+
+    animation: Reveal 2s ease forwards;
+
+
+}
+
+@keyframes Reveal {
+
+    /*Hides the entire element at the beginning, then reveals it from left to right by changing the right inset from 100% to 0%.*/
+    from {
+        opacity: 0;
+        clip-path: inset(0 100% 0 0);
+    }
+
+
+    to {
+        opacity: 1;
+        clip-path: inset(0 0 0 0)
+    }
+
+}
+
+#sparkle {
+    position: absolute;
+
+    top: 10%;
+    left: 10%;
+
+}
+
+#sparkle2 {
+    position: absolute;
+
+    left: -7%;
+    bottom: -200px;
+
+    z-index: 3;
+
+
+}
+
+#title2 {
+    position: absolute;
+
+    top: 65%;
+    left: 10%;
+    color: black;
+    font-size: 20px;
+    z-index: 3;
+    animation: reveal 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+    
+
+    
+}
+
+@keyframes reveal {
+
+    /*Makes the element appear smoothly after a short delay, moving from 50px to the left into its original position while fading from invisible to fully visible.*/
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.mynavbar {
+    background-color: #F9A18C;
+}
+
+.nav-link {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+.navbar-brand {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: white;
+}
+
+.what-we-provide {
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+
+
+
+}
+
+.infobox {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+
+.infoicon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 180px;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    background-color: #F9A18C;
+}
+
+.infotext strong {
+    color: #3b3b3b;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.infotext p {
+    color: #535353;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+}
+
+
+.carousel {
+    overflow: hidden;
+    width: 2000px;
+}
+
+.wrap {
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+    animation: slide 15s linear infinite;
+}
+
+.wrap img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+@keyframes slide {
+    to {
+        translate: calc(-4 * 250px);
+    }
+}
+
+.images {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+
+    justify-items: center;
+    transition: all 0.5s ease;
+
+
+
+}
+
+#image:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 40px rgb(249, 161, 140);
+
+}
+
+#image {
+    width: 700px;
+    height: 900px;
+
+}
+
+.col img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.col img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 40px white;
+}
+
+#button{
+    background-color:palevioletred;
+    margin-left: 70%;
+}
+
+#model {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: auto;
+
+
+}
+
+
+
+
+.homeimages {
+    position: relative;
+    left: 55%;
+    top: -100vh;
+    width: 50%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+.random {
+    width: 50vw;
+    height: 120vh;
+
+}
+
+#braceletss {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+
+}
+
+#necklacess {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+
+}
+
+#ringss {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+
+}
+
+#earringss {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+
+}
+
+#aurelle2 {
+    margin-bottom: 200px;
+}
+
+.jewelry-circle {
+    position: relative;
+    width: 850px;
+    height: 850px;
+    left: 70%;
+    top: 90vh;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.jewelry-circle img {
+    width: 130vw;
+    height: 130vh;
+    object-fit: cover;
+    animation: rotateJewelry 30s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotateJewelry {
+    
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+.container2 {
+    background-color: rgb(249, 161, 140);
+
+
+
+    margin-top: 100%;
+    width: 100%;
+
+}
+
+#newtitle {
+    font-size: 100px;
+    position: relative;
+    bottom: 90vh;
+    left: 10px;
+    letter-spacing: 3px;
+    z-index: 3;
+    color: rgb(249, 161, 140);
+    animation: Reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+
+    transform: translateX(-50px);
+    text-shadow: 4px 2px 2px pink;
+}
+
+@keyframes Reveal {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#bracelettitle {
+    margin-left: -10%;
+    margin-bottom: -10%;
+    animation: Reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+
+    transform: translateX(-50px);
+}
+
+#necklacetitle {
+    margin-left: -10%;
+    margin-bottom: -10%;
+    animation: Reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+
+    transform: translateX(-50px);
+}
+
+#ringstitle {
+     width: 80vw;
+    margin-left: -10%;
+    margin-bottom: -10%;
+    animation: Reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+
+    transform: translateX(-50px);
+
+}
+
+#earringstitle {
+    width: 80vw;
+
+    margin-bottom: -5%;
+    animation: Reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+
+    transform: translateX(-50px);
+}
+
+#newarrivalss {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    justify-items: left;
+
+    margin-top: -40%;
+   
+
+
+
+
+}
+
+#storytitle {
+    font-size: 100px;
+    position: relative;
+    left: 50%;
+    bottom: 130vh;
+    letter-spacing: 3px;
+    z-index: 3;
+    color: rgb(249, 161, 140);
+    animation: Reveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s forwards;
+
+    transform: translateX(-50px);
+    text-shadow: 4px 2px 2px pink;
+}
+
+@keyframes Reveal {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#subtitle {
+    color: whitesmoke;
+    font-size: 40px;
+    left: 70%;
+    bottom: 129vh;
+    position: relative;
+
+
+
+}
+
+#text {
+    color: whitesmoke;
+    font-size: 25px;
+    left: 45%;
+    bottom: 129vh;
+
+    position: relative;
+
+    font-style: italic;
+}
+
+#containerabtus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    
+}
+
+#abt1 {
+    width: 30vw;
+    height: 900px;
+    
+
+z-index: 1;
+}
+
+#abt2 {
+    width: 30vw;
+    height: 600px;
+    background-color: rgb(249, 161, 140,0.4);
+    z-index: 1;
+}
+
+
+#abt3 {
+    width: 30vw;
+    height: 900px;
+    z-index: 1;
+
+}
+#abt3 img{
+   
+    width: 30vw;
+    height: 600px;
+    position: relative;
+    top: 30%;
+    z-index: 1;
+
+
+}
+#abt1 img {
+    position: relative;
+    top: 10%;
+    width: 30vw;
+    height: 500px;
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+
+}
+
+#titleabt2 {
+    color: pink;
+    font-size: 20px;
+    position: relative;
+    top: 5%;
+    
+
+
+}
+
+#titleabt3 {
+    color: whitesmoke;
+    text-shadow: 4px 2px 2px pink;
+    font-size: 40px;
+    
+    
+
+
+
+
+
+
+
+
+}
+
+#textabt {
+   
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+#abt4{
+    width: 100vw;
+    height: 200px;
+    background-color:  rgb(249, 161, 140) ;
+    display: flex;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+padding:35px;
+color:pink;
+
+}
+.container5{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.container5 {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 0px;
+    margin: 0;
+}
+
+#reviews {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 60px 0;
+    
+}
+
+#reviews .row {
+    width: 100vw;
+    margin: 0;
+}
+
+#reviews .col {
+    padding: 12px;
+}
+
+#reviews .review-card {
+    width: 100%;
+    height: 100%;
+}
+
+#reviews .customer-img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+#reviews .customer-img:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 40px rgb(249, 161, 140);}
+    
+#founders {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#founders .founder-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #F9A18C;
+    transition: 0.5s ease;
+}
+
+#founders .founder-img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 5px 30px #F9A18C;
+}
+
+#founders h2 {
+    color: #3b302c;
+    margin-bottom: 8px;
+}
+
+#founders h5 {
+    color: #b58a58;
+    margin-bottom: 15px;
+}
+
+#founders p {
+    color: #74645e;
+   line-height: 1.8;
+    max-width: 320px;
+    text-align: right;
+}
+.quiz {
+    text-align: center;
+    padding: 30px;
+}
+
+.quiz h1 {
+    color: #F9A18C;
+}
+
+.quiz h3 {
+    margin-top: 35px;
+    color: #F9A18C
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 130px;
+    height: 65px;
+    background-color: white;
+    border: 1px solid pink;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card:hover {
+    background-color: pink;
+    transform: translateY(-5px);
+}
+
+#find {
+    
+    
+    color: #F9A18C;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#find:hover {
+    color: plum;
+    transform: translateY(-5px);
+}
+
+#result {
+    color:#F9A18C ;
+    margin-top: 25px;
+}
+#game{
+    color:white ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sales {
+    position: sticky;
+    top: 10%;
+    width: 100%;
+    background-color: whitesmoke;
+    color:#F9A18C ;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 14px;
+    z-index: 6;
+}
+
+
+
+
+img,
+video {
+    max-width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    
+    .mynavbar .navbar-nav {
+        text-align: center;
+    }
+
+    
+    #homee,
+    #model {
+        width: 100%;
+        height: auto;
+    }
+
+    #title {
+        top: 25%;
+        left: 6%;
+        font-size: 38px;
+    }
+
+    #title2 {
+        top: 43%;
+        left: 6%;
+        font-size: 15px;
+    }
+
+    
+    .what-we-provide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .infobox {
+        flex: 1 1 220px;
+    }
+
+    
+    .carousel {
+        width: 100%;
+    }
+
+    .wrap {
+        grid-auto-columns: 180px;
+        gap: 12px;
+    }
+
+    .wrap img {
+        width: 180px;
+        height: 180px;
+    }
+
+    
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #image {
+        width: 100%;
+        height: auto;
+        max-width: 340px;
+    }
+
+    
+    #braceletss,
+    #necklacess,
+    #ringss,
+    #earringss,
+    #newarrivalss {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    #braceletss .col,
+    #necklacess .col,
+    #ringss .col,
+    #earringss .col,
+    #newarrivalss .col {
+        flex: 0 1 calc(50% - 20px);
+        min-width: 0;
+        text-align: center;
+    }
+
+    #braceletss .col img,
+    #necklacess .col img,
+    #ringss .col img,
+    #earringss .col img,
+    #newarrivalss .col img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    
+    .homeimages {
+        position: static;
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .homeimages .col {
+        flex: 1 1 220px;
+        text-align: center;
+    }
+
+    .random {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    
+    #bracelettitle,
+    #necklacetitle,
+    #ringstitle,
+    #earringstitle {
+        display: block;
+        width: 75%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    
+    .jewelry-circle {
+        width: 80%;
+        height: auto;
+        left: auto;
+        top: auto;
+        margin: 30px auto;
+        transform: none;
+    }
+
+    .jewelry-circle img {
+        width: 100%;
+        height: auto;
+    }
+
+    #newtitle {
+        position: static;
+        font-size: 55px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #newarrivalss {
+        margin-top: 0;
+    }
+
+
+    #abtus video {
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #storytitle,
+    #subtitle,
+    #text {
+        position: static;
+        left: auto;
+        bottom: auto;
+        text-align: center;
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    #storytitle {
+        font-size: 55px;
+    }
+
+    #subtitle {
+        font-size: 30px;
+    }
+
+    #text {
+        font-size: 18px;
+    }
+
+    
+    #containerabtus {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #abt1,
+    #abt2,
+    #abt3 {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    #abt1 img,
+    #abt3 img {
+        position: static;
+        display: block;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #abt4 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    
+    #reviews {
+        width: 100%;
+    }
+
+    #reviews .row {
+        width: 100%;
+    }
+
+    #reviews .customer-img {
+        height: 320px;
+    }
+
+    #founders .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    #founders .col-lg-4 {
+        flex: 1 1 220px;
+    }
+
+    #founders p {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    
+    .quiz {
+        padding: 25px 15px;
+    }
+
+    .options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card {
+        flex: 1 1 130px;
+        max-width: 180px;
+    }
+
+    
+    .container2 footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+    
+    #title {
+        top: 20%;
+        left: 5%;
+        font-size: 25px;
+    }
+
+    #title2 {
+        top: 34%;
+        left: 5%;
+        font-size: 10px;
+    }
+
+    .sales {
+        top: 0;
+        font-size: 12px;
+        padding: 7px 4px;
+    }
+
+    
+    .what-we-provide {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .infobox {
+        width: 100%;
+    }
+
+    .infoicon {
+        flex-shrink: 0;
+        width: 45px;
+        height: 45px;
+        margin-right: 12px;
+    }
+
+    
+    #braceletss .col,
+    #necklacess .col,
+    #ringss .col,
+    #earringss .col,
+    #newarrivalss .col {
+        flex: 0 1 calc(50% - 12px);
+    }
+
+    #braceletss,
+    #necklacess,
+    #ringss,
+    #earringss,
+    #newarrivalss {
+        gap: 12px;
+        padding: 8px;
+    }
+
+    #braceletss .col img,
+    #necklacess .col img,
+    #ringss .col img,
+    #earringss .col img,
+    #newarrivalss .col img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    
+    .col p {
+        font-size: 12px;
+        overflow-wrap: break-word;
+    }
+
+    #button {
+        margin-left: 5px;
+        padding: 5px 8px;
+    }
+
+    
+    #image {
+        max-width: 100%;
+    }
+
+    
+    #storytitle {
+        font-size: 36px;
+    }
+
+    #subtitle {
+        font-size: 23px;
+    }
+
+    #text {
+        font-size: 15px;
+    }
+
+    #titleabt3 {
+        font-size: 28px;
+    }
+
+    #textabt {
+        font-size: 16px;
+    }
+
+    #abt4 {
+        padding: 20px 10px;
+    }
+
+    
+    #reviews {
+        padding: 30px 10px;
+    }
+
+    #reviews .customer-img {
+        height: 260px;
+    }
+
+    
+    .card {
+        flex: 1 1 110px;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    
+    .container2 footer {
+        flex-direction: column;
+    }
+}
